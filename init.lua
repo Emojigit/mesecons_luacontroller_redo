@@ -674,7 +674,7 @@ local function node_timer(pos)
 	return false
 end
 
-function wireless(target,source,msg)
+function wireless(target,msg)
 	local string_meta = getmetatable("")
 	local sandbox = string_meta.__index
 	if minetest.registered_nodes[minetest.get_node(target).name].is_burnt then
